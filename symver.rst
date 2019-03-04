@@ -101,9 +101,9 @@ leave feedback or propose changes, please `open an issue or PR on GitHub`_.
 .. _Alexander Nicholi: https://nicholatian.com/
 .. _open an issue or PR on GitHub: https://github.com/symver/symver/issues
 
-Licence
-=======
+Terms
+=====
 
-`Creative Commons – CC BY-SA 4.0`_
+Licence: `Creative Commons – CC BY-SA 4.0`_
 
 .. _Creative Commons - CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
