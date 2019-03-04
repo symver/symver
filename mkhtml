@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+
+if ! command -v rst2html 1>/dev/null; then
+	echo 'Docutils is needed to make HTML from the ReST source file, but it'
+	echo 'was not found on your system. Exiting...'
+	exit 2
+fi
+
+if [ "$1" = '' ]; then
+	echo 'No output file specified. Exiting...'
+	exit 3
+fi
+
+rst2html --stylesheet-path=symver.css symver.rst "$1"
