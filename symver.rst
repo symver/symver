@@ -95,15 +95,13 @@ These examples use Acme Co. and its main product, Acmecomp to illustrate.
 About
 =====
 
-This specification was authored by `Alexander Nicholi`_. If you’d like to
-leave feedback or propose changes, please `open an issue or PR on GitHub`_.
+This specification was authored by `Alexander Nicholi
+<https://nicholatian.com/>`_. If you’d like to leave feedback or propose
+changes, please `open an issue or PR on GitHub
+<https://github.com/symver/symver/issues>`_.
 
-.. _Alexander Nicholi: https://nicholatian.com/
-.. _open an issue or PR on GitHub: https://github.com/symver/symver/issues
+Licence
+=======
 
-Terms
-=====
-
-Licence: `Creative Commons – CC BY-SA 4.0`_
-
-.. _Creative Commons - CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+`Creative Commons – CC BY-SA 4.0
+<https://creativecommons.org/licenses/by-sa/4.0/>`_
