@@ -75,22 +75,24 @@ These examples use Acme Co. and its main product, Acmecomp to illustrate.
 	Generally you won’t want more than two numbers, major and minor, and the
 	latter can be dropped in more general contexts. When you need to push
 	technical updates, the third “patch” number is your go-to.
-2. **Major versions are major.** So you’ve had modest successes with its first
-	version. Now you’re looking at releasing Acmecomp 2, completely rewritten,
-	rethought, and better than ever. This work you’ve done should hold as much
-	value as possible to your users, so make sure to give them something worth
-	buying into with this!
-3. **Minor versions are not quite minor.** When everyone bought Acmecomp 2,
-	they were enthralled. But you haven’t stopped working on it, and you have
-	a release filled with updates, fixes and improvements that you’d feel more
-	than a little guilty to charge for, so you release it as Acmecomp 2.1.
-	Everyone who bought Acmecomp 2 is entitled to a free update to this
-	version, so while it’s not such a huge deal they need to rebuy, it’s no
-	small change either and most users will find the time to get it.
-4. **Patch versions are for troubleshooting.** For everyone who posted that
-	timeless help thread and got back, “what version are you on?” This is
-	perfect to stick in an about box, or a page footer, for when you need it.
-	It shouldn’t mean much in relation to features.
+2. **Major versions are major.**
+	So you’ve had modest successes with its first version. Now you’re looking
+	at releasing Acmecomp 2, completely rewritten, rethought, and better than
+	ever. This work you’ve done should hold as much value as possible to your
+	users, so make sure to give them something worth buying into with this!
+3. **Minor versions are not quite minor.**
+	When everyone bought Acmecomp 2, they were enthralled. But you haven’t
+	stopped working on it, and you have a release filled with updates, fixes
+	and improvements that you’d feel more than a little guilty to charge for,
+	so you release it as Acmecomp 2.1. Everyone who bought Acmecomp 2 is
+	entitled to a free update to this version, so while it’s not such a huge
+	deal they need to rebuy, it’s no small change either and most users will
+	find the time to get it.
+4. **Patch versions are for troubleshooting.**
+	For everyone who posted that timeless help thread and got back, “what
+	version are you on?” This is perfect to stick in an about box, or a page
+	footer, for when you need it. It shouldn’t mean much in relation to
+	features.
 
 About
 =====
