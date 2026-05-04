@@ -12,4 +12,9 @@ if [ "$1" = '' ]; then
 	exit 3
 fi
 
-rst2html --stylesheet-path=symver.css symver.rst "$1"
+rst2html5 \
+	--no-generator \
+	--no-section-numbering \
+	--strip-comments \
+	--stylesheet-path=symver.css \
+	symver.rst "$1"

@@ -1,112 +1,623 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&subset=latin-ext');
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500&subset=latin-ext');
+/* normals */
 
-body {
-  font-family: Rubik, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(216,216,216);
-  background-color: rgb(32,32,32);
-  line-height: 1.35;
-  padding: 0.75rem;
-  margin: 0;
-  max-width: 80em;
-  margin-left: auto;
-  margin-right: auto;
+*,
+*::before,
+*::after
+{
+	box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-  font-weight: 500;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 1em;
+[tabindex="-1"]:focus:not(:focus-visible)
+{
+	outline: 0 !important;
 }
 
-h1 {
-  font-weight: 400;
-  border-bottom: 0.05rem solid rgb(216,216,216);
-  font-size: 220%;
+html
+{
+	font-family:
+		/* Fira Sans */
+		'Segoe UI',
+		'Candara',
+		'Bitstream Vera Sans',
+		'DejaVu Sans',
+		'Bitstream Vera Sans',
+		'Trebuchet MS',
+		'Verdana',
+		'Verdana Ref',
+		sans-serif;
+	line-height: 1.125;
+	tab-size: 8;
 }
 
-h2 {
-  font-weight: 400;
-  border-bottom: 0.05rem solid rgb(216,216,216);
-  font-size: 180%;
+/* bodyetal */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: left;
+	background-color: #111;
+	background-image: url('https://cdn.tohoku.ac/xionbg.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-attachment: fixed;
+	color: #eee;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 150%;
+main#symbolic-versioning-1-0
+{
+	background-color: rgba(255, 255, 255, 0.8125);
+	color: #111;
+	margin: 20px auto;
+	overflow: auto;
 }
 
-h4,h5,h6 {
-  font-weight: 700;
-  font-size: 110%;
+.text-overline
+{
+	text-decoration-line: overline;
 }
 
-pre,code {
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 500;
-  padding: 0.5rem;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+.text-center
+{
+	text-align: center;
 }
 
-pre.editor {
-  font-weight: 500;
-  font-family: 'Source Code Pro', monospace;
-  margin-bottom: 1em;
-  margin-top: 0;
-  margin-left: 1em;
-  border: 0.15em solid #000;
-  border-bottom-left-radius: 1em;
-  border-top-right-radius: 2em;
-  padding: 0.75em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+@media (max-width: 799.98px)
+{
+	main#symbolic-versioning-1-0
+	{
+		width: 100vw;
+	}
 }
 
-pre.editor-colors {
-  border-color: #131313;
-  background-color: #2E2E2E;
+@media (min-width: 800px)
+{
+	main#symbolic-versioning-1-0
+	{
+		width: 780px;
+	}
 }
 
-hr {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 0.75rem;
-  border: 0;
-  height: 0.075em;
-  background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.75),rgba(255,255,255,0));
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
+/* footer */
+
+section#licence
+{
+	margin: 10px auto 20px;
+	text-align: center;
 }
 
-ul {
-  list-style-type: square;
+section#licence > p
+{
+	font-family:
+		/* Roboto Slab */
+		'Palatino Linotype',
+		'Palatino',
+		'Palladio',
+		'URW Palladio L',
+		'Book Antiqua',
+		'Baskerville',
+		'Bookman Old Style',
+		'Bitstream Charter',
+		'Nimbus Roman No9 L',
+		'Garamond',
+		'Apple Garamond',
+		'ITC Garamond Narrow',
+		'New Century Schoolbook',
+		'Century Schoolbook',
+		'Century Schoolbook L',
+		'Georgia',
+		serif;
+	font-weight: 500;
 }
 
-a {
-  -webkit-transition: border 300ms ease-in-out;
-  -moz-transition: border 300ms ease-in-out;
-  -o-transition: border 300ms ease-in-out;
-  -ms-transition: border 300ms ease-in-out;
-  transition: border 300ms ease-in-out;
-  text-decoration: none;
-  color: rgb(93,144,221);
+@media (max-width: 799.98px)
+{
+	section#licence
+	{
+		width: 50vw;
+	}
 }
 
-a,a:visited {
-  border-bottom: 0.1em solid rgba(93,144,221,0);
+@media (min-width: 800px)
+{
+	section#licence
+	{
+		width: 390px;
+	}
 }
 
-a:active,a:hover {
-  border-bottom: 0.1em solid rgba(93,144,221,1);
+/* links */
+
+a
+{
+	transition: border 200ms ease-in-out;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	color: #3868B8;
+}
+
+a:link, a:visited
+{
+	color: #3868B8;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+}
+
+a:active, a:hover
+{
+	color: #3868B8;
+	border-bottom: 1px solid #3868B8;
+	text-decoration: none;
+}
+
+a.plainlinks
+{
+	transition: none;
+	color: inherit;
+	border-bottom: none;
+}
+
+/* mono */
+
+/* do not use this, ever */
+pre
+{
+	display: none;
+}
+
+/* <code> is for shaded code items ("objects") */
+code,
+/* <tt> is for jargon used in the course of language (nouns/verbs) */
+tt,
+/* <kbd> is for keyboard keys and human interface buttons */
+kbd
+{
+	font-family:
+		/* Fira Mono */
+		'Consolas',
+		'Andale Mono WT',
+		'Andale Mono',
+		'Lucida Console',
+		'Lucida Sans Typewriter',
+		'DejaVu Sans Mono',
+		'Bitstream Vera Sans Mono',
+		'Liberation Mono',
+		'Nimbus Mono L',
+		'Monaco',
+		'Courier New',
+		'Courier',
+		monospace;
+	font-weight: 500;
+}
+
+code, tt, kbd
+{
+	color: inherit;
+	padding: 2px;
+	word-wrap: break-word;
+}
+
+code
+{
+	background-color: rgba(13, 13, 13, 0.0625);
+	border-radius: 2px;
+}
+
+kbd
+{
+	background-color: rgba(13, 13, 13, 0.0625);
+	border-bottom: 0.125rem solid rgba(13, 13, 13, 0.125);
+	border-radius: 0.125rem 0.125rem 0.25rem 0.25rem;
+	padding: 1px 3px;
+}
+
+/* paragrap */
+
+p, h1, h2, h3, h4, h5, h6, ol, ul
+{
+	margin: 10px;
+}
+
+dd
+{
+	margin-left: 5px;
+}
+
+ol, ul
+{
+	padding-left: 30px;
+}
+
+li > p
+{
+	margin: 5px 0;
+}
+
+section > h2
+{
+	margin: 20px 0 10px;
+	text-align: center;
+}
+
+h1.title
+{
+	margin: 20px 0;
+	text-align: center;
+}
+
+hr
+{
+	margin: 20px auto;
+	padding: 0;
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(
+		to right,
+		rgba(17, 17, 17, 0.75),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.5),
+		rgba(17, 17, 17, 0.75)
+	);
+}
+
+@media (max-width: 799.98px)
+{
+	hr
+	{
+		width: 100%;
+	}
+}
+
+@media (min-width: 800px)
+{
+	hr
+	{
+		width: 600px;
+	}
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan1.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 100;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa1.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan2.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 200;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa2.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan3.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa3.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan4.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa4.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan5.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa5.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan6.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa6.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan7.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa7.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan8.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 800;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa8.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firasan9.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Sans';
+	font-style: italic;
+	font-weight: 900;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/ifirasa9.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Mono';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firamon5.woff');
+}
+
+@font-face
+{
+	font-family: 'Fira Mono';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/firamonb.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriwel.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriwem.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriwe.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriwei.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriweb.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriwez.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriwek.woff');
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: 900;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/merriwey.woff');
+}
+
+@font-face
+{
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('https://cdn.tohoku.ac/robotosl.woff');
+}
+
+html
+{
+	font-family:
+		'Fira Sans',
+		'Segoe UI',
+		'Candara',
+		'Bitstream Vera Sans',
+		'DejaVu Sans',
+		'Bitstream Vera Sans',
+		'Trebuchet MS',
+		'Verdana',
+		'Verdana Ref',
+		sans-serif;
+}
+
+section#licence > p
+{
+	font-family:
+		'Roboto Slab',
+		'Palatino Linotype',
+		'Palatino',
+		'Palladio',
+		'URW Palladio L',
+		'Book Antiqua',
+		'Baskerville',
+		'Bookman Old Style',
+		'Bitstream Charter',
+		'Nimbus Roman No9 L',
+		'Garamond',
+		'Apple Garamond',
+		'ITC Garamond Narrow',
+		'New Century Schoolbook',
+		'Century Schoolbook',
+		'Century Schoolbook L',
+		'Georgia',
+		serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family:
+		'Merriweather',
+		'Constantia',
+		'Lucida Bright',
+		'Lucidabright',
+		'Lucida Serif',
+		'Lucida',
+		'DejaVu Serif',
+		'Bitstream Vera Serif',
+		'Liberation Serif',
+		'Georgia',
+		serif;
+}
+
+code, tt, kbd, hr
+{
+	font-family:
+		'Fira Mono',
+		'Consolas',
+		'Andale Mono WT',
+		'Andale Mono',
+		'Lucida Console',
+		'Lucida Sans Typewriter',
+		'DejaVu Sans Mono',
+		'Bitstream Vera Sans Mono',
+		'Liberation Mono',
+		'Nimbus Mono L',
+		'Monaco',
+		'Courier New',
+		'Courier',
+		monospace;
 }
