@@ -114,6 +114,6 @@ the `Creative Commons Attribution–ShareAline 4.0
 
 The `semantic versioning <https://semver.org/>`_ initiative and website
 served as the inspiration to promulgate symbolic versioning. In that
-spirit, Symbolic Versioning is always looking for translations. Please
-open a PR on GitHub if you have translated this document into a new
-language; we would gladly integrate it.
+spirit, the project is always looking for translations. Please open a PR
+on GitHub if you have translated this document into a new language; we
+would gladly integrate it.
