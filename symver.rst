@@ -100,10 +100,12 @@ About
 This specification was authored by `Alexander Nicholi
 <https://nicholatian.com/>`_. If you’d like to leave feedback or propose
 changes, please `open an issue or PR on GitHub
-<https://github.com/symver/symver/issues>`_.
+<https://github.com/symver/symver/issues>`_. This work is licensed under
+the `Creative Commons Attribution–ShareAline 4.0
+<https://creativecommons.org/licenses/by-sa/4.0/>`_ licence.
 
-Licence
-=======
-
-`Creative Commons – CC BY-SA 4.0
-<https://creativecommons.org/licenses/by-sa/4.0/>`_
+The `semantic versioning <https://semver.org/>`_ initiative and website
+served as the inspiration to promulgate symbolic versioning. In that
+spirit, Symbolic Versioning is always looking for translations. Please
+open a PR on GitHub if you have translated this document into a new
+language; we would gladly integrate it.
